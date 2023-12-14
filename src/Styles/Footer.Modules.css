@@ -1,0 +1,25 @@
+footer{
+    background-color: #2779a7;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 1px#F29F05;
+    border-top-style: solid;
+    text-align: center;
+    max-height: 10px;    
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.company-footer{
+    list-style: none;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

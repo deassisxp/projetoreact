@@ -1,0 +1,46 @@
+.contato{
+    margin-top: 50px;
+    min-height: 100%;
+}
+/*********************************** Contato **********************************/
+.formContato{
+    background: url('../imagens/contato.jpeg') no-repeat;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    margin-top: 0px;
+    position: relative;
+    
+}
+.formsContato{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border:1px blueviolet solid;
+    color: #000;
+}
+.info, .social{
+    width: 70%;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border:1px blueviolet solid;
+    display: flex;
+}
+/*********************************** Redes Sociais **********************************/
+.social{    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.iconSocial{
+    font-size: 30px;
+    margin: 10px;
+    color: #49c5b6;
+}

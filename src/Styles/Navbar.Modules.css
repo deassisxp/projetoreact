@@ -1,0 +1,44 @@
+#navMain{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    background-color: #2779a7;
+    border-bottom: 1px solid #F29F05;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: #fff;
+}
+#navMain:after{
+    clear: both;
+    content: "";
+}
+#navSec{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 10px;
+    color: #fff;
+
+}
+#navhome{
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    text-align: left;
+    color: #fff;
+}
+#navmenu{
+    float: right;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 10px;
+    text-align: right;
+    color: #fff;
+}
