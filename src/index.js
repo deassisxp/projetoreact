@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Main from './Pages/Main';
+import Contato from './Pages/Contato';
+import Quiz from './Pages/Quiz';
+import Sobre from './Pages/Sobre';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Main/>}></Route>
+        <Route path='/sobre' element={<Sobre/>}></Route>
+        <Route path='/quiz' element={<Quiz/>}></Route>
+        <Route path='/contato' element={<Contato/>}></Route>
+      </Routes>
+      <Footer/>
+    </Router>
   </React.StrictMode>
 );
 
