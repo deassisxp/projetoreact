@@ -23,7 +23,7 @@ function Main(){
                     <div className="row center counters with-borders">
                         <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
                             <div className="counter counter-primary">
-                                <strong data-to="1000" data-append="+">1000</strong>
+                                <strong data-to="100" data-append="+">100</strong>
                                 <label>Funcionários</label>
                             </div>
                         </div>

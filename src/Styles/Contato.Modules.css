@@ -1,6 +1,9 @@
 .contato{
     margin-top: 50px;
-    min-height: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 /*********************************** Contato **********************************/
 .formContato{
@@ -23,14 +26,30 @@
     text-align: center;
     border:1px blueviolet solid;
     color: #000;
+    flex-direction: column;
+    height: 400px;
 }
-.info, .social{
+.info, .social, .mensagem{
     width: 70%;
     margin: 10px;
     align-items: center;
     text-align: center;
-    border:1px blueviolet solid;
     display: flex;
+    color: #1684A7;
+}
+.info, .mensagem{
+    flex-direction: column;
+}
+#nome, #email, #msg{
+    width: 50%;
+    border-radius: 5px;
+}
+#msg {
+    height: 100px;
+}
+.enviarMensagem{
+    border-radius: 5px;
+    background-color: #2779a7;
 }
 /*********************************** Redes Sociais **********************************/
 .social{    

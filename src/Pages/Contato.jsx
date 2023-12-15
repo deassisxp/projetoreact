@@ -25,6 +25,7 @@ function Contato(){
                         <label htmlFor="msg">Mensagem:</label>
                         <textarea id='msg'></textarea>
                     </div>
+                    <button type="submit" className="enviarMensagem">Enviar Mensagem</button>
                 </form>
             </section>
             <section className='social'>
