@@ -1,26 +1,25 @@
-import { Link } from "react-router-dom"
-import '../Styles/Navbar.Modules.css'
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavLinkActive } from "react-bootstrap";
 
-function Navbar(props){
-    return(
-        <div id="navMain">
-            <nav id="navSec">
-                <ul>
-                    <li>
-                        <Link to="/"><span>Olá, {props.nome}</span></Link>
-                    </li>
-                    <li>
-                        <Link to="/Sobre"><span>Sobre</span></Link>
-                    </li>
-                    <li>
-                        <Link to="/Contato"><span>Contato</span></Link>
-                    </li>
-                    <li>
-                        <Link to="/Quiz"><span>Quiz</span></Link>
-                    </li>
-                </ul>                
-            </nav>            
-        </div>
-    )
+function NavBar(props) {
+
+    return (
+        <Navbar className="container-fluid" style={{ backgroundColor: "#2779a7" }} fixed="top">
+          <NavLink href="/" style={{marginLeft: "10px" }}>
+            Olá, {props.nome}
+          </NavLink>
+          <Nav className="nav justifycontentend">
+            <NavItem>
+                <NavLink href="/sobre">Sobre</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="/contato">Contato</NavLink>
+            </NavItem>
+            <NavItem active>
+                <NavLink href="/quiz">Quiz</NavLink>
+            </NavItem>
+          </Nav>
+        </Navbar>
+      );
 }
-export default Navbar
+
+export default NavBar;

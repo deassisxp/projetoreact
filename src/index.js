@@ -5,7 +5,7 @@ import Main from './Pages/Main';
 import Contato from './Pages/Contato';
 import Quiz from './Pages/Quiz';
 import Sobre from './Pages/Sobre';
-import Navbar from './Components/Navbar';
+import NavBar from './Components/Navbar';
 import Footer from './Components/Footer';
 import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Navbar/>
+      <NavBar/>
       <Routes>
         <Route path='/' element={<Main/>}></Route>
         <Route path='/sobre' element={<Sobre/>}></Route>
