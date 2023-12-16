@@ -1,0 +1,52 @@
+[
+    {
+        "questao": "Qual é a finalidade da tag <header> em HTML?",
+        "opcao": [
+            "Para adicionar um rodapé à página.",
+            "Para adicionar um cabeçalho à página.",
+            "Para adicionar uma imagem à página.",
+            "Para adicionar um parágrafo à página."
+        ],
+        "resposta": "b"
+    },
+    {
+        "questao": "Qual propriedade CSS é usada para alterar a cor de fundo de um elemento?",
+        "opcao": [
+            "color",
+            "font-size",
+            "background-color",
+            "border"
+        ],
+        "resposta": "c"
+    },
+    {
+        "questao": "Como você declara uma variável em JavaScript?",
+        "opcao": [
+            "variable x;",
+            "var x;",
+            "x",
+            "declare x;"
+        ],
+        "resposta": "b"
+    },
+    {
+        "questao": "Qual tag HTML é usada para criar um link?",
+        "opcao": [
+            "<link>",
+            "<a>",
+            "<href>",
+            "<url>"
+        ],
+        "resposta": "b"
+    },
+    {
+        "questao": "Qual seletor CSS seleciona um elemento com uma classe específica?",
+        "opcao": [
+            "#classname",
+            ".classname",
+            "classname",
+            "*classname"
+        ],
+        "resposta": "b"
+    }
+]

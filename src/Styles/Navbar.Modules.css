@@ -16,29 +16,32 @@
     content: "";
 }
 #navSec{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    margin-right: 10px;
     color: #fff;
+    text-align: center;
 
+}
+#navSec li{
+    list-style-type: none;
+    display: inline;
+    align-items: center;
+    background-color: #F29F05;
 }
 #navhome{
     float: left;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10px;
     text-align: left;
     color: #fff;
 }
 #navmenu{
     float: right;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
-    list-style-type: none;
-    margin-right: 10px;
     text-align: right;
     color: #fff;
 }

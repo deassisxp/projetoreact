@@ -1,0 +1,42 @@
+[
+    {
+      "titulo": "Texto 1",
+      "texto": "Este é o primeiro texto."
+    },
+    {
+      "titulo": "Texto 2",
+      "texto": "Este é o segundo texto."
+    },
+    {
+      "titulo": "Texto 3",
+      "texto": "Este é o terceiro texto."
+    },
+    {
+      "titulo": "Texto 4",
+      "texto": "Este é o quarto texto."
+    },
+    {
+      "titulo": "Texto 5",
+      "texto": "Este é o quinto texto."
+    },
+    {
+      "titulo": "Texto 6",
+      "texto": "Este é o sexto texto."
+    },
+    {
+      "titulo": "Texto 7",
+      "texto": "Este é o sétimo texto."
+    },
+    {
+      "titulo": "Texto 8",
+      "texto": "Este é o oitavo texto."
+    },
+    {
+      "titulo": "Texto 9",
+      "texto": "Este é o nono texto."
+    },
+    {
+      "titulo": "Texto 10",
+      "texto": "Este é o décimo texto."
+    }
+  ]

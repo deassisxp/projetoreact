@@ -4,13 +4,13 @@ function Footer(){
     return(
         <footer>
             <li className='footer'>
-                <h5>copyright &copy;</h5><h5 >Nome do site</h5><h5> 2023</h5>
+                <span>copyright &copy;</span><span >Nome do site</span><span> 2023</span>
             </li>
             <li className='footer'>
-                <a href="#"><h5>Termos de Uso</h5></a>
+                <a href="#"><span>Termos de Uso</span></a>
             </li>
             <li className='footer'>
-                <a href="#"><p><h5>Politicas de Privacidade</h5></p></a>
+                <a href="#"><p><span>Politicas de Privacidade</span></p></a>
             </li>
         </footer>
     )

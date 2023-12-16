@@ -11,9 +11,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .footer{
+    display: flex;
     list-style: none;
     float: left;
     padding-left: 50px;
@@ -22,4 +22,10 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer span{
+    font-size: 15px;
+    align-items: center;
+    color: #F29F05;
+    text-align: center;
 }

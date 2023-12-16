@@ -1,13 +1,12 @@
 .contato{
     margin-top: 50px;
     min-height: 100vh;
-    align-items: center;
     display: flex;
     flex-direction: column;
 }
 /*********************************** Contato **********************************/
 .formContato{
-    background: url('../imagens/contato.jpeg') no-repeat;
+    background-color: #09A599;
     display: flex;
     text-align: center;
     align-items: center;
@@ -16,6 +15,7 @@
     background-size: cover;
     margin-top: 0px;
     position: relative;
+    flex-direction: column;
     
 }
 .formsContato{
@@ -24,18 +24,18 @@
     margin: 10px;
     align-items: center;
     text-align: center;
-    border:1px blueviolet solid;
-    color: #000;
+    color: #F6EC72;
     flex-direction: column;
     height: 400px;
 }
-.info, .social, .mensagem{
+.info, .mensagem{
     width: 70%;
     margin: 10px;
     align-items: center;
     text-align: center;
     display: flex;
-    color: #1684A7;
+    color: #F6EC72;
+    
 }
 .info, .mensagem{
     flex-direction: column;
@@ -50,6 +50,7 @@
 .enviarMensagem{
     border-radius: 5px;
     background-color: #2779a7;
+    color: #F6EC72;
 }
 /*********************************** Redes Sociais **********************************/
 .social{    
