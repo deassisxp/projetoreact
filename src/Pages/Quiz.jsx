@@ -2,6 +2,11 @@
 import '../Styles/Quiz.Modules.css'
 import quests from '../Data/questoes.json'
 import { useState } from 'react'
+import imageq from '../imagens/quiz.jpeg'
+import A from '../imagens/A.png'
+import B from '../imagens/B.png'
+import C from '../imagens/C.png'
+import D from '../imagens/D.png'
 
 
 function Quiz(){
@@ -35,7 +40,10 @@ function Quiz(){
     function nextQuestions(){
         const btnanswer = document.getElementsByClassName("btnanswer")
         const perguntaQuiz = document.getElementById("perguntaQuiz")
-        const quizFinal = document.getElementById("quizFinal")
+        const quizFinalA = document.getElementById("quizFinalA")
+        const quizFinalB = document.getElementById("quizFinalB")
+        const quizFinalC = document.getElementById("quizFinalC")
+        const quizFinalD = document.getElementById("quizFinalD")
         const quizworking = document.getElementById("quizworking")
         console.log(option)
         if (i < index && option != null){
@@ -55,8 +63,23 @@ function Quiz(){
             }
         }
         else if(option!=null){
-            quizFinal.classList.remove("none")
-            quizworking.classList.add("none")
+            if(answerA >= Math.max(answerB,answerC,answerD)){
+                quizFinalA.classList.remove("none")
+                quizworking.classList.add("none")
+            }
+            else if(answerB >= Math.max(answerC,answerD)){
+                quizFinalB.classList.remove("none")
+                quizworking.classList.add("none")
+            }
+            else if(answerC >= answerD){
+                quizFinalC.classList.remove("none")
+                quizworking.classList.add("none")
+            }
+            else {
+                quizFinalD.classList.remove("none")
+                quizworking.classList.add("none")
+            }
+            
         }
         
     }
@@ -82,8 +105,9 @@ function Quiz(){
             </div>*/}
             <div id="quiz">
                 <button id="button-quiz" onClick={()=>{startQuiz()}}>
-                    <h1>Começar Quiz!</h1>
+                    <h1>Começar Quiz!</h1>                    
                 </button>
+                <img src={imageq} alt="" id="imgquiz" />
             </div>
             <div id="quizworking" class='none'>
                 <h4 id='perguntaQuiz'>pergunta</h4>
@@ -93,10 +117,17 @@ function Quiz(){
                 <button className="btnanswer" onClick={()=>{setOptions(3)}}>botao4</button>
                 <button id="btnconfirm" onClick={()=>{nextQuestions()}}>enviar</button>
             </div>
-            <div className="none" id='quizFinal'>
-                <h4>
-                    Suas respostas foram: A:{answerA},B:{answerB},C:{answerC},D:{answerD}
-                </h4>
+            <div className="none" id='quizFinalA'>
+                <img src={A} alt="" id="imgA" />
+            </div>
+            <div className="none" id='quizFinalB'>
+                <img src={B} alt="" id="imgB" />
+            </div>
+            <div className="none" id='quizFinalC'>
+                <img src={C} alt="" id="imgC" />
+            </div>
+            <div className="none" id='quizFinalD'>
+                <img src={D} alt="" id="imgD" />
             </div>
         </>
     )

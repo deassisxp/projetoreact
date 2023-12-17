@@ -63,3 +63,11 @@
     margin: 10px;
     color: #49c5b6;
 }
+#sedes{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30vh;
+    min-width: 30px;
+}

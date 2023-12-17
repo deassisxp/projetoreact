@@ -1,4 +1,4 @@
-#quiz{
+#quiz, #quizFinalA, #quizFinalB, #quizFinalC, #quizFinalD{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,4 +16,28 @@
 }
 .selectedbtn{
     background-color:blue;
+}
+#imgquiz, #imgA, #imgB, #imgC, #imgD{
+    max-width: 50vh;
+    height: auto;
+    width: 500px;
+}
+#quizworking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    min-height: 90vh;
+}
+.btnanswer{
+    width: 30%;
+    border-radius: 5px;
+    margin: 5px;
+}
+#btnconfirm{
+    border-radius: 5px;
+    margin: 5px;
 }

@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Main from './Pages/Main';
 import Contato from './Pages/Contato';
 import Quiz from './Pages/Quiz';
 import Sobre from './Pages/Sobre';
 import NavBar from './Components/Navbar';
 import Footer from './Components/Footer';
 import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
+import Main from './Pages/Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const nome = "Visitante";
 root.render(
   <React.StrictMode>
     <Router>
-      <NavBar/>
+      <NavBar nome={nome}/>
       <Routes>
         <Route path='/' element={<Main/>}></Route>
         <Route path='/sobre' element={<Sobre/>}></Route>

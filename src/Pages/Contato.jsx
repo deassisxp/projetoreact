@@ -5,6 +5,14 @@ import { SiLinkedin } from "react-icons/si";
 import { SiWhatsapp } from "react-icons/si";
 import { SiX } from "react-icons/si";
 import Header from '../Components/Header';
+import sedes from '../Data/sede.json'
+import CardServico from "../Components/CardServico"; 
+
+const cards = [ 
+  { titulo: sedes[0].titulo, texto: sedes[0].texto },
+  { titulo: sedes[1].titulo, texto: sedes[1].texto },
+  { titulo: sedes[2].titulo, texto: sedes[2].texto },
+];
 
 
 
@@ -12,7 +20,11 @@ function Contato(){
     return(
         <div className='contato'>
             <Header/>
-            <section className='sedes'>cards sede</section>
+            <section className='sedes'>
+                {cards.map((card, index) => (
+                <CardServico key={index} titulo={card.titulo} texto={card.texto} />
+                ))}
+            </section>
             <section className='formContato'>
                 <h1 style={{color: '#F6EC72'}}>Fale Conosco</h1>
                 <form action="" className='formsContato'>

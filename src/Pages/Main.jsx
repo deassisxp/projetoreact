@@ -2,6 +2,14 @@ import { Link } from "react-router-dom"
 import '../Styles/Modules.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slide from "../Components/Slide";
+import CardServico from "../Components/CardServico"; 
+import depoimentos from '../Data/depoimentos.json'
+
+const cards = [ 
+  { titulo: depoimentos[0].titulo, texto: depoimentos[0].texto },
+  { titulo: depoimentos[1].titulo, texto: depoimentos[1].texto },
+  { titulo: depoimentos[2].titulo, texto: depoimentos[2].texto },
+];
 
 function Main(){
     return(
@@ -44,22 +52,9 @@ function Main(){
             </section>
             
             <section>
-                <div className="homeDestaqueDepoimentos--list">
-                    <article className="homeDestaqueDepoimentos--item">
-                        <div className="homeDestaqueDepoimentos--item-header">
-                            <img className="homeDestaqueDepoimentos--item-photo" src="/assets/img/depoimentos/alunos/angela-caldas.1686744881.jpg" alt="Foto de Angela Emanoelle" loading="lazy"/>
-                            <h3 className="homeDestaqueDepoimentos--item-name">Angela Emanoelle</h3>
-                        </div>
-                        <div className="homeDestaqueDepoimentos--item-body">
-                            <p className="homeDestaqueDepoimentos--item-body-details">A arquiteta Angela estava atuando na área da construção civil...</p>
-                            <div className="homeDestaqueDepoimentos--item-body-preview" data-src="ODEgEk83PLA">
-                                <img src="/assets/img/alura2023/home/video-play.1687365821.png" alt="Play" loading="lazy"/>
-                                <a href="https://www.youtube.com/watch?v=ODEgEk83PLA" target="_blank" rel="noopener"></a>
-                            </div>
-                                <a href="https://www.youtube.com/watch?v=ODEgEk83PLA" target="_blank" rel="noopener" className="homeDestaqueDepoimentos--item-body-link">Ver depoimento completo no YouTube</a>
-                        </div>
-                    </article>
-                </div>
+                {cards.map((card, index) => (
+                <CardServico key={index} titulo={card.titulo} texto={card.texto} />
+                ))}
             </section>
         </div>
         

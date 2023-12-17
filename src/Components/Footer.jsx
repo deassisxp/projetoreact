@@ -4,17 +4,15 @@ import { Nav, NavItem, NavLink } from "react-bootstrap";
 function Footer(){
     return(
         <footer>
-            <Nav className="footer-nav" style={{display:"flex"}}>
-                <NavItem style={{alignItems:"center", textAlign:"center"}}>
-                    <span>copyright &copy;</span>
-                    <span>Nome do site</span>
-                    <span>2023</span>
+            <Nav className="footer-nav" style={{display:"flex", justifyContent:"space-between", marginLeft: "10px"}}>
+                <NavItem style={{margin: "5px"}}>
+                    copyright&copy; Nome do site 2023
                 </NavItem>
-                <NavItem>
-                    <NavLink className="footer-link" href="#">Termos de Uso</NavLink>
+                <NavItem style={{margin: "5px"}}>
+                    <u>Termos de Uso</u>
                 </NavItem>
-                <NavItem>
-                <NavLink className="footer-link" href="#">Politicas de Privacidade</NavLink>
+                <NavItem style={{margin: "5px"}}>
+                    <u>Politicas de Privacidade</u>
                 </NavItem>
             </Nav>
         </footer>
